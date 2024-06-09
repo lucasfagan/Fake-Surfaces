@@ -36,3 +36,5 @@ def is_contractible(acyclic_surface, maximal_tree):
     if G.order()!=1:
         return False
     return True
+
+print(is_contractible(acyclic_surface, maximal_tree))
