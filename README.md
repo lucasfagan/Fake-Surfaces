@@ -12,7 +12,7 @@ Thus, our notation of fake surfaces relies on ordering the vertices and edges wi
 Viewing the 1-skeletons as 4-regular multigraphs, consider the map
 $\mathsf{D}:M_{n}(\mathbb{Z})\to \mathbb{Z}$ that gives a decimal representation of a matrix by simply concatenating the rows from top to bottom into an integer with $n^2$ digits. An example makes this clear: 
 $$ \mathsf{D}\left(\begin{bmatrix}1&2\\3&4\end{bmatrix}\right)=1234.$$
-Explicitly, if $A=(a_{i,j}), $$ \mathsf{D}(A)=\sum_{i, j=1}^n 10^{n(n-i)+n-j} a_{i,j}$$ as an integer.
+Explicitly, if $A=(a_{i,j})$, $$ \mathsf{D}(A)=\sum_{i, j=1}^n 10^{n(n-i)+n-j} a_{i,j}$$ as an integer.
 
 For a given 1-skeleton of complexity $n$, we choose the adjacency matrix $A=(a_{i,j})$ and therefore an ordering of the vertices that maximizes $\mathsf{D}(A)$. Note this also provides the canonical ordering of the 1-skeleta for a given complexity: from largest value of $\mathsf{D}(A)$ to smallest. 
 
