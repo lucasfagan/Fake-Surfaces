@@ -3,7 +3,7 @@ This repository contains the data for the classification of acyclic cellular fak
 
 ## Fake Surface Data
 
-All acyclic cellular fake surfaces of complexity 1-4 can be found in ``fakesurfaces.csv.`` Each row represents an acyclic cellular fake surface. The first two columns represent the complexity followed the number of the 1-skeleton. Then, all the disk attaching maps are listed, where a negative entry denotes going along the edge in the opposite way. Following each disk, the two `Y/N` columns are the answers to whether the disk is embedded and has a trivial $T$-bundle, respectively. Information on how to construct vertex and edge labelings along with the ordering of the one-skeletons of a given complexity can be found in our paper [] or in the file `surface_presentation_convention.tex`.
+All acyclic cellular fake surfaces of complexity 1-4 can be found in ``fakesurfaces.csv.`` Each row represents an acyclic cellular fake surface. The first two columns represent the complexity followed the number of the 1-skeleton. Then, all the disk attaching maps are listed, where a negative entry denotes going along the edge in the opposite way. Following each disk, the two `Y/N` columns are the answers to whether the disk is embedded and has a trivial $T$-bundle, respectively. Information on how to construct vertex and edge labelings along with the ordering of the one-skeletons of a given complexity can be found in our paper [] or in the file `Surface_presentation_convention.pdf`.
 
 
 ## Classification Code
