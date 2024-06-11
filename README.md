@@ -10,4 +10,4 @@ The code that generated the classification can be found in ``fakesurfaces_cla_6.
 For a given surface and maximal tree, we can put them at the top of this file as shown and then run ``sage check_contractibility.sage.`` It is also easy to modify the code to check multiple surfaces at once.  
 
 ## Generating One-Skeletons
-We provide the code used to generate the one-skeleta in ``generate_one_skeleta.py``. Here we specify a complexity at the top, called ``SIZE_OF_MATRIX`` and then run the script.  
+We provide the code used to generate the one-skeleta in ``generate_one_skeleta.py``. Here we specify a complexity at the top, called ``SIZE_OF_MATRIX`` and then use the functions as named. Sample usage is provided at the bottom of the script.   
