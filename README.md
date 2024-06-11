@@ -4,18 +4,17 @@ This repository contains the data for the classification of acyclic cellular fak
 ## Fake Surface Data
 
 All acyclic cellular fake surfaces of complexity 1-4 can be found in ``fakesurfaces.csv.`` As described in [], the convention used is as follows: 
-We present a fake surface $F$ as $(\Gamma_i^j, M)$ where $\Gamma_i^j$ is the adjacency matrix of the $i$th 1-skeleton of complexity $j$, and $M$ is a matrix representing the 2-cell attaching maps. A negative entry denotes going along the edge in the opposite way. In this section, we pad the attaching maps with 0s when they are shorter than the longest disk. 
 
-The last two columns are the answers to whether the disk is embedded and has a trivial $T$-bundle, respectively.  
+Each row represents an acyclic cellular fake surface. The two columns represents the complexity followed the number of the 1-skeleton. Then, all the disk attaching maps are listed, where a negative entry denotes going along the edge in the opposite way. Following each disk, the two `Y/N` columns are the answers to whether the disk is embedded and has a trivial $T$-bundle, respectively.  
 
-Our notation of fake surfaces relies on ordering the vertices and edges. We adopt the following conventions.
+Thus, our notation of fake surfaces relies on ordering the vertices and edges within a 1-skeleton and also ordering the 1-skeletons of a given complexity. We do this in the following way.
 
-We present the 1-skeleta, viewed as 4-regular multigraphs, as follows: consider the map
+Viewing the 1-skeletons as 4-regular multigraphs, consider the map
 $\mathsf{D}:M_{n}(\mathbb{Z})\to \mathbb{Z}$ that gives a decimal representation of a matrix by simply concatenating the rows from top to bottom into an integer with $n^2$ digits. An example makes this clear: 
 $$ \mathsf{D}\left(\begin{bmatrix}1&2\\3&4\end{bmatrix}\right)=1234.$$
-Explicitly, if $A=(a_{i,j}),  \mathsf{D}(A)=\sum_{i, j=1}^n 10^{n(n-i)+n-j} a_{i,j}$ as an integer.
+Explicitly, if $A=(a_{i,j}), $$ \mathsf{D}(A)=\sum_{i, j=1}^n 10^{n(n-i)+n-j} a_{i,j}$$ as an integer.
 
-For a given 1-skeleton of complexity $n$, we choose the adjacency matrix $A=(a_{i,j})$ and therefore an ordering of the vertices that maximizes $\mathsf{D}(A)$. Note this also gives a canonical ordering of the 1-skeleta for a given complexity: from largest value of $\mathsf{D}(A)$ to smallest. 
+For a given 1-skeleton of complexity $n$, we choose the adjacency matrix $A=(a_{i,j})$ and therefore an ordering of the vertices that maximizes $\mathsf{D}(A)$. Note this also provides the canonical ordering of the 1-skeleta for a given complexity: from largest value of $\mathsf{D}(A)$ to smallest. 
 
 We then label the edges in the order they appear in the upper-right triangle of the chosen adjacency matrix, read left-to-right and top-to-bottom. To be precise, using our ordering of the vertices, let $(i_1,j_1)$ and $(i_2,j_2)$ be edges satisfying $i_1\leq j_1$ and $i_2\leq j_2$. Then $(i_1,j_1)<(i_2,j_2)$ if $i_1<i_2$ or $i_1=i_2$ and $j_1<j_2$. We then label edges from 1 to $2n$ in accordance with this ordering. The order of multiple edges between two vertices can be chosen arbitrarily. 
 
