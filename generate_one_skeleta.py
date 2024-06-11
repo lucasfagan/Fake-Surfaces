@@ -220,23 +220,9 @@ all_matrices = create_adj_matrices([], [])
 all_connected_matrices_np = [np.array(matrix) for matrix in all_matrices if is_connected(matrix)]
 print(len(all_connected_matrices_np))
 all_unique_matrices_np = unique_graphs_up_to_isomorphism(all_connected_matrices_np)
-# print(all_unique_matrices_np[:5])
+print(all_unique_matrices_np[:5])
 print(len(all_unique_matrices_np))
 
-# the trace of the matrix can be 0,2,4,6,8,10,12
-# for each, print out the number of matrices with that trace
-
-for i in range(len(all_unique_matrices_np)):
-    mx = all_unique_matrices_np[i]
-    if mx.max() == 1:
-        print(i)
-
-for i in range(8):
-    print(i*2, len([matrix for matrix in all_unique_matrices_np if np.trace(matrix)==i*2]))
-
-exit()
-
-matrix_num = 1
 for matrix in all_unique_matrices_np:
     graph_by_edges = generate_graph_by_edges(matrix)
     graph_by_verts = generate_by_verts(graph_by_edges)
@@ -249,15 +235,7 @@ for matrix in all_unique_matrices_np:
     print(maxl_tree, end="")
     print(")")
 
-    matrix_num+=1
-    # if np.trace(matrix)==12:
-    #     print(matrix)
-    #     graph_by_edges = generate_graph_by_edges(matrix)
-    #     print(graph_by_edges)
-    #     print(change_format_maxl_tree(find_maximal_tree(matrix), graph_by_edges))
-    #     print(generate_by_verts(graph_by_edges))
-
-
+   
 
 
     
