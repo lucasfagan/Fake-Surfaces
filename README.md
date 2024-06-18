@@ -5,6 +5,8 @@ This repository contains the data for the classification of acyclic cellular fak
 
 All acyclic cellular fake surfaces of complexity 1-4 and complexity 5 without small disks can be found in ``fakesurfaces.csv.`` Each row represents an acyclic cellular fake surface. The first two columns represent the complexity followed the number of the 1-skeleton. Then, all the disk attaching maps are listed, where a negative entry denotes going along the edge in the opposite way. Following each disk, the two `Y/N` columns are the answers to whether the disk is embedded and has a trivial $T$-bundle, respectively. Information on how to construct vertex and edge labelings along with the ordering of the one-skeletons of a given complexity can be found in [our paper](https://arxiv.org/abs/2406.09439) or in the file `Surface_presentation_convention.pdf`.
 
+In addition, all ordered one-skeletons, and therefore vertex and edge labelelings, can be found in ``ordered_one_skeletons.pdf``.
+
 
 ## Classification Code
 The code that generated the classification can be found in ``fakesurfaces_cla_6.py.`` In the filename, `cla` refers to the fact that it takes as input a command line argument corresponding to the 1-skeleton, and `6` that all 1-skeleta up to complexity 6 are written into the file.
