@@ -1,0 +1,50 @@
+[
+  {
+    "surface": "5.28.136",
+    "description": "The dodecahedral spine of the Poincare homology sphere (minus a ball): six pentagons on the complete graph K5. Its fundamental group is the binary icosahedral group, which maps onto the alternating group A5. Below, the generators are the edges outside the spanning tree chosen by FakeSurface.presentation(), the relators are the disks with tree edges deleted, and each generator is sent to a permutation of {0,1,2,3,4} (p[i] is the image of i). Every relator maps to the identity and the image is all of A5, so pi_1 is nontrivial.",
+    "images": {
+      "5": [
+        1,
+        2,
+        3,
+        4,
+        0
+      ],
+      "6": [
+        2,
+        0,
+        4,
+        1,
+        3
+      ],
+      "7": [
+        4,
+        3,
+        1,
+        0,
+        2
+      ],
+      "8": [
+        1,
+        4,
+        3,
+        0,
+        2
+      ],
+      "9": [
+        3,
+        2,
+        0,
+        4,
+        1
+      ],
+      "10": [
+        2,
+        4,
+        3,
+        1,
+        0
+      ]
+    }
+  }
+]
